@@ -5,5 +5,6 @@ function solution(n) {
             even.push(i);
         }
     }
-    return (even.reduce((a, b) => a + b));
+    // 초깃값을 항상 설정하도록!!
+    return (even.reduce((a, b) => a += b, 0));
 }
